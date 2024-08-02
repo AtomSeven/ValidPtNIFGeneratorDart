@@ -28,7 +28,7 @@ List<int> generateRandomNumber() {
 // Function to generate countNIF valid NIFs
 List<String> generateNIFs([int countNIF=100]) {
   List<String> nifs = [];
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < countNIF; i++) {
     List<int> randomNumber = generateRandomNumber();
     int checkDigit = calculateCheckDigit(randomNumber);
     randomNumber.add(checkDigit);

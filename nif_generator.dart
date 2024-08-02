@@ -25,8 +25,8 @@ List<int> generateRandomNumber() {
   return digits;
 }
 
-// Function to generate 10 valid NIFs
-List<String> generateNIFs() {
+// Function to generate countNIF valid NIFs
+List<String> generateNIFs([int countNIF=100]) {
   List<String> nifs = [];
   for (int i = 0; i < 10; i++) {
     List<int> randomNumber = generateRandomNumber();
